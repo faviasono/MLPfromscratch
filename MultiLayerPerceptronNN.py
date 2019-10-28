@@ -6,13 +6,6 @@ Created on Wed Oct 16 12:08:50 2019
 @author: andreafavia
 """
 
-##to do:
-# cost on validation (done)
-# set and plot it (done)
-#early stopping and adaptive learning rate(done)
-
-#might do regularization
-
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
@@ -151,8 +144,6 @@ class MLP():
             train_pred,y_train = self.predict(df_train)
             accuracy_train = accuracy_score(train_pred,y_train)
             
-          #  print(cost,last_cost,cost-last_cost,sep='---')
-          
              #Early stopping: if the cost in the validate sample ( in our case directly on the test set)
              #does not decrease for more than *early_stopping* epochs I may start overfitting the training set
             if cost_validation >= last_cost:
@@ -244,8 +235,8 @@ def mean_squared_error(actual, predicted,deriv=False):
 if __name__=='__main__':
     
     
-    df = pd.read_excel('HW3Atrain.xlsx')
-    df_test = pd.read_excel('HW3Avalidate.xlsx')
+    df = pd.read_excel('images/HW3Atrain.xlsx')
+    df_test = pd.read_excel('images/HW3Avalidate.xlsx')
     
     n_epochs = 200
     #del mlp
