@@ -9,5 +9,16 @@ You must use for each layer an activation function.
 In the program there are only the definitions of Relu, LRelu and Sigmoid, therefore if you want to try different activation functions you must implement them.
 This is also true for the loss functions since I have used the MSE cost functions.
 
-A detailed analysis of hyperparameters and initializations used is present in the report.ipynb
+## Usage
+
+In the main section you cam define your architecture as shown below.
+  
+<pre><code class="python"># 
+nn_architecture = {
+                  'layers':[(10,2),(10,10),(1,10)],
+                  'activations':[relu,relu,sigmoid]
+                   }
+</code></pre>
+
+
 
