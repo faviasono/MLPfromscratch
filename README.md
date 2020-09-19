@@ -13,8 +13,8 @@ This is also true for the loss functions since I have used the MSE cost function
 
 In the main section you cam define your architecture as shown below.
   
-<pre><code class="python"># 
-nn_architecture = {
+<pre><code class="python">
+# nn_architecture = {
                   'layers':[(10,2),(10,10),(1,10)],
                   'activations':[relu,relu,sigmoid]
                    }
