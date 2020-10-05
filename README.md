@@ -11,7 +11,7 @@ This is also true for the loss functions since I have used the MSE cost function
 
 ## Usage
 
-In the main section you cam define your architecture as shown below.
+In the main section you can define your architecture as shown below.
   
 <pre><code class="python">
 # nn_architecture = {
